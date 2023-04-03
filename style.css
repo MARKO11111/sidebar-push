@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: museosans;
+    src: url(museosans_300-webfont.ttf);
+}
+nav {
+    position: fixed;
+    z-index:1000;
+    width: 250px;
+    top:0;
+    bottom:0;
+    right:0px;
+    background:#081f3f;
+    transition: all 0.5s linear;
+    transform: translate3d(250px,0,0);
+}
+nav.active {
+    transform: translate3d(0,0,0);
+}
+.main-content.active {
+    transform: translate3d(-250px,0,0);
+}
+.main-content {
+    padding: 50px;
+    margin-right: 0px;
+    transition: all 0.5s linear;
+    background:rgb(230, 230, 230)f;
+    height: 2000px;
+}
+.main-content p {
+    font-family: 'Encode Sans Condensed', sans-serif; 
+}
+nav ul li {
+    color: #fff;
+    list-style: none;
+    padding: 15px 25px;
+    font-family: 'museosans', sans-serif;
+}
+.toggle-btn {
+    left:-65px;
+    position: absolute;
+    top: 14px;
+    cursor: pointer;
+    border: 3px solid #151719;
+    width: 30px;
+    height: 30px;
+    padding: 11px;
+    border-radius:50%;
+
+}
+.toggle-btn span {
+    display: block;
+    height:3px;
+    width:31px;
+    background:#151719;
+    margin: 5px 0;
+}
+.toggle-btn .shorter-line {
+    width: 26px;
+}
